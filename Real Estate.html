@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dream Homes - Royal Real Estate</title>
+    <link rel="stylesheet" href="Real Estate.css">
+            
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#search">Search</a>
+        <a href="#properties">Properties</a>
+        <a href="#compare">Compare</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <h1>♛ DREAM HOMES</h1>
+        <p>Discover Luxury. Find Your Perfect Home.</p>
+        <p class="tagline">Buy | Rent | Explore Premium Properties</p>
+    </header>
+
+    <!-- Search and Filter -->
+    <section class="search" id="search">
+        <h2>⌕ Search Your Dream Property</h2>
+
+        <form action="#properties" method="get">
+            <input type="text" name="location"
+                   placeholder="Enter location">
+
+            <select name="type">
+                <option value="">Property Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+            </select>
+
+            <select name="purpose">
+                <option value="">Buy or Rent</option>
+                <option value="buy">Buy</option>
+                <option value="rent">Rent</option>
+            </select>
+
+            <select name="budget">
+                <option value="">Select Budget</option>
+                <option value="low">Below ₹50 Lakhs</option>
+                <option value="medium">₹50 Lakhs - ₹1 Crore</option>
+                <option value="high">Above ₹1 Crore</option>
+            </select>
+
+            <button type="submit">Search Properties</button>
+        </form>
+
+        <p style="margin-top: 12px; color: #647875;">
+            Explore our featured homes and find a property that suits you.
+        </p>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="properties" id="properties">
+
+        <div class="section-heading">
+            <h2>Featured Properties</h2>
+            <p>Beautiful homes for a better lifestyle</p>
+        </div>
+
+        <div class="property-container">
+
+            <!-- Property 1 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern luxury house">
+
+                <div class="card-content">
+                    <span class="tag">FOR SALE</span>
+                    <h3>Royal Luxury House</h3>
+                    <p class="location">📍 Vijayawada, Andhra Pradesh</p>
+                    <p class="price">₹85 Lakhs</p>
+
+                    <p class="details">🛏 Bedrooms: 3</p>
+                    <p class="details">🛁 Bathrooms: 2</p>
+                    <p class="details">📐 Area: 1800 sq. ft.</p>
+
+                    <div class="amenities">
+                        <b>Amenities</b><br>
+                        Parking | Garden | Wi-Fi
+                    </div>
+
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern apartment">
+
+                <div class="card-content">
+                    <span class="tag">FOR RENT</span>
+                    <h3>Premium City Apartment</h3>
+                    <p class="location">📍 Guntur, Andhra Pradesh</p>
+                    <p class="price">₹18,000/month</p>
+
+                    <p class="details">🛏 Bedrooms: 2</p>
+                    <p class="details">🛁 Bathrooms: 2</p>
+                    <p class="details">📐 Area: 1200 sq. ft.</p>
+
+                    <div class="amenities">
+                        <b>Amenities</b><br>
+                        Lift | Security | Gym
+                    </div>
+
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80"
+                    alt="Beautiful family villa">
+
+                <div class="card-content">
+                    <span class="tag">FOR SALE</span>
+                    <h3>Grand Family Villa</h3>
+                    <p class="location">📍 Hyderabad, Telangana</p>
+                    <p class="price">₹1.5 Crore</p>
+
+                    <p class="details">🛏 Bedrooms: 4</p>
+                    <p class="details">🛁 Bathrooms: 3</p>
+                    <p class="details">📐 Area: 2500 sq. ft.</p>
+
+                    <div class="amenities">
+                        <b>Amenities</b><br>
+                        Swimming Pool | Garden | Parking
+                    </div>
+
+                    <a href="#contact" class="btn">Enquire Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Property Comparison Table -->
+    <section class="comparison" id="compare">
+        <h2>Compare Properties</h2>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Luxury House</th>
+                <th>Apartment</th>
+                <th>Family Villa</th>
+            </tr>
+
+            <tr>
+                <td>Price</td>
+                <td>₹85 Lakhs</td>
+                <td>₹18,000/month</td>
+                <td>₹1.5 Crore</td>
+            </tr>
+
+            <tr>
+                <td>Location</td>
+                <td>Vijayawada</td>
+                <td>Guntur</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>Bedrooms</td>
+                <td>3</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Bathrooms</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Area</td>
+                <td>1800 sq. ft.</td>
+                <td>1200 sq. ft.</td>
+                <td>2500 sq. ft.</td>
+            </tr>
+
+            <tr>
+                <td>Parking</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p><b>Agency:</b> Dream Homes Real Estate</p>
+        <p><b>Email:</b> info@dreamhomes.example</p>
+        <p><b>Phone:</b> +91 98765 43210 (sample number)</p>
+        <p><b>Location:</b> Vijayawada, Andhra Pradesh, India</p>
+
+        <p>Let us help you find your dream property!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 <span>Dream Homes</span> | Real Estate Website</p>
+        <p>Luxury Living Begins Here.</p>
+    </footer>
+
+</body>
+</html>

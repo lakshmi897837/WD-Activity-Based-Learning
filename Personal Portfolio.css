@@ -1,0 +1,273 @@
+
+/* General Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F3FF;
+    color: #342B42;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #5B3F8C;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 12px #DDD0F5;
+}
+
+header h2 {
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #B9A1E8;
+    transform: translateY(-3px);
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, #E8DFFA, #FFFFFF);
+    text-align: center;
+    padding: 70px 20px;
+    animation: slide 1s ease;
+}
+
+.home h1 {
+    color: #5B3F8C;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    color: #7959B3;
+}
+
+/* All Sections */
+section {
+    padding: 28px;
+    margin: 25px auto;
+    max-width: 1000px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px #E5DCF4;
+    animation: appear 1s ease;
+    scroll-margin-top: 110px;
+}
+
+h2 {
+    color: #5B3F8C;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #5B3F8C;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-top: 10px;
+    border: 2px solid #5B3F8C;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #B9A1E8;
+    border-color: #B9A1E8;
+    color: #34204F;
+    transform: translateY(-3px);
+}
+
+/* Education Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #DDD0F0;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #5B3F8C;
+    color: white;
+}
+
+tr:hover {
+    background-color: #F3EDFC;
+}
+
+/* Technical Skills */
+.bar {
+    background-color: #EEE7FA;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bar div {
+    background: linear-gradient(90deg, #B9A1E8, #D5C5F5);
+    color: #34204F;
+    text-align: right;
+    padding: 6px 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: grow 2s ease;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 70%;
+}
+
+.python {
+    width: 60%;
+}
+
+.ai {
+    width: 50%;
+}
+
+/* Project Cards */
+.card {
+    background-color: #F7F3FF;
+    padding: 18px;
+    margin: 15px 0;
+    border-left: 5px solid #B9A1E8;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #5B3F8C;
+}
+
+.card:hover {
+    transform: translateX(8px);
+    background-color: #EEE7FA;
+    box-shadow: 0 4px 10px #DDD0F0;
+}
+
+/* Lists */
+li {
+    margin: 12px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #5B3F8C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Section Animation */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Home Animation */
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Skill Bar Animation */
+@keyframes grow {
+    from {
+        width: 0;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    header {
+        position: static;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 45px 15px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 12px;
+        padding: 18px;
+        scroll-margin-top: 15px;
+    }
+
+    table {
+        font-size: 12px;
+        min-width: 520px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+}
